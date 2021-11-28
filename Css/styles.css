@@ -1,0 +1,332 @@
+/*||||||||||||||| FONTS |||||||||||||||||*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600;900&family=Questrial&display=swap');
+
+body{
+    background-color: #171717;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5%;
+}
+.subTitle{
+    font-family: 'Questrial', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 3%;
+}
+
+/*||||||||||||||||||| NAVBAR ||||||||||||||||||||*/
+.navbar{
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.1em;
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.nav-link{
+    margin: 0.2em 0 0 1em;
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.getButton{
+    border: none;
+    border-radius: 10px;
+    background-color: #17BEBB;
+    height: 2.8em;
+    width: 7.8em;
+    font-family: 'Questrial', sans-serif;
+    margin-left: 1em;
+    font-size: 18px;
+   text-align: center;
+   color: #171717;
+   align-items: center;
+   padding-top: 0.7em;
+}
+
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loader.gif') 50% 50% no-repeat rgb(11, 47, 63);
+    opacity: .9;
+}
+
+/*||||||||||||||||| HEADER ||||||||||||||||||||||*/
+
+.profileHeader{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+.profilePicture img{
+    width: 37.25em;
+    border-radius: 50%;
+}
+.profileHeader p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #fff;
+}
+.profileHeader button{
+    border: none;
+    border-radius: 10px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    color: #171717;
+    width: 9.25em;
+    height: 2.8em;
+    background-color: #17BEBB;
+}
+#getButton{
+    background-color: #857E7B;
+    margin-left: 1em;
+}
+
+.buttonContianer{
+    display: flex;
+}
+
+#title2{
+    color: #17BEBB;
+}
+.infoHeader{
+    margin-top: 15em;
+}
+
+/*||||||||||||||||| ABOUT CONTAINER |||||||||||||||||*/
+
+.aboutContainer{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.aboutContainer p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.aboutParagraf{
+    padding: 2% 20% 0 20%;
+    margin-bottom: 5%;
+}
+.infoContainer{
+    width: 25em;
+}
+.aboutInfoContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15% 0 15%;
+}
+.aboutInfoContainer p{
+    font-size: 16px;
+}
+.aboutCircle{
+    background-color: #212121;
+    width: 3.87em;
+    height: 3.87em;
+    border-radius: 50%;
+    padding: 25px;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.aboutInnerCircle{
+    background-color: #17BEBB;
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+}
+
+/*|||||||||||||||||||| WHAT I DO |||||||||||||||||||||||*/
+
+.whatContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.whatInfo{
+    background-color: #282828;
+    border-radius: 10px;
+    width: 21.8em;
+    height: 15em;
+    margin: 1%;
+    padding: 3%;
+}
+
+.whatInfo p{
+    font-family: 'Questrial', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    color:#C4C4C4;
+    margin-top: 5%;
+}
+.lineColor{
+    border-top: #17BEBB 3px solid;
+    width: 25px;
+}
+
+.skillsContainer{
+    margin: 7% 0 7% 0;
+}
+
+.skillsInfo{
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    padding: 2%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.skills{
+    margin: 3% 5% 3% 5%;
+}
+.skills h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #C4C4C4;
+}
+.skills h6{
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #17BEBB;
+}
+
+/*|||||||||||||||||||| PROJECTS |||||||||||||||||*/
+.projectsContainer{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.projectsInfo{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.projectsInfo h2{
+    color: #17BEBB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+}
+.projectsInfo h4{
+    color: #C4C4C4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    font-weight: 700;
+}
+.projectsInfo p{
+    color: #C4C4C4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+.projectsInfo button{
+    background-color: #17BEBB;
+    color: #171717;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    border: none;
+    width: 8em;
+    height: 2.5em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+.webButton{
+    margin-left: 0;
+}
+
+.formContainer{
+    margin-bottom: 5em;
+}
+
+.form-floating{
+    margin: 1em 0.3em 1em 0.3em;
+   
+}
+
+label{
+    color: #C4C4C4;
+}
+.form-control{
+    background-color:  #171717!important;
+    color: #C4C4C4;
+    border-radius: 10px;
+}
+.form-control:valid {
+    background-color:  #171717!important;
+    color: #C4C4C4;
+    border-radius: 10px;
+  }
+  .form-control:focus{
+      outline: none;
+      box-shadow: none;
+  }
+  #formButton{
+      margin-top: 2em;
+  }
+
+  /*||||||||||||||||||  GO TO TOP BUTTON ||||||||||||||||||*/
+
+  #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 3em;
+    border: none;
+    outline: none;
+    background-color: #17BEBB;
+    color: #171717;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 800;
+  }
+  #topBtn:hover{
+      color: #C4C4C4;
+      background-color: #857E7B;
+  }
+
+  @media only screen and (min-width: 300px) {
+    .form{
+        display: block;
+        justify-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 719px) {
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+}
