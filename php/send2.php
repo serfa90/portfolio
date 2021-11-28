@@ -1,22 +1,22 @@
 <?php
-$name = $_POST['name'];
+$nombre = $_POST['name'];
 $mail = $_POST['email'];
-$message = $_POST['message'];
+$empresa = $_POST['message'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
-$mensaje = "This message was sent by " . $name . ",\r\n";
-$mensaje .= "Her email is: " . $mail . " \r\n";
-$mensaje .= "Message: " . $_POST['message'] . " \r\n";
-$mensaje .= "Sent " . date('d/m/Y', time());
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['message'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
 
 $para = 'serfaty.samuel90@gmail.com';
-$asunto = 'New message';
+$asunto = 'Mensaje de mi sitio web';
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, utf8_decode($mensaje), $header);
 
 header("Location:index.html");
 ?>
