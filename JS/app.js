@@ -12,7 +12,7 @@ window.onload = function() {
 /*|||||||||||||| WHAT I DO HOVER ON LINE ||||||||||||||||||*/
 
 $("#iDo1").mouseenter(function(){
-    $("#lineColor1").animate({width: '270px'})
+    $("#lineColor1").animate({width: '100%'})
 })
 
 $("#iDo1").mouseleave(function(){
@@ -20,7 +20,7 @@ $("#iDo1").mouseleave(function(){
 })
 
 $("#iDo2").mouseenter(function(){
-    $("#lineColor2").animate({width: '270px'})
+    $("#lineColor2").animate({width: '100%'})
 })
 
 $("#iDo2").mouseleave(function(){
@@ -28,7 +28,7 @@ $("#iDo2").mouseleave(function(){
 })
 
 $("#iDo3").mouseenter(function(){
-    $("#lineColor3").animate({width: '270px'})
+    $("#lineColor3").animate({width: '100%'})
 })
 
 $("#iDo3").mouseleave(function(){

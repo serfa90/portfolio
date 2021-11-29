@@ -3,11 +3,11 @@
 
 body{
     background-color: #171717;
+    width: 100%;
 }
 
 .title{
     font-family: 'Poppins', sans-serif;
-    font-size: 3.5em;
     font-weight: 900;
     color: #fff;
     margin-bottom: 5%;
@@ -76,12 +76,10 @@ body{
 /*||||||||||||||||| HEADER ||||||||||||||||||||||*/
 
 .profileHeader{
-    display: flex;
-    justify-content: space-around;
     margin-top: 3em;
 }
 .profilePicture img{
-    width: 37.25em;
+   
     border-radius: 50%;
 }
 .profileHeader p{
@@ -105,16 +103,14 @@ body{
     margin-left: 1em;
 }
 
-.buttonContianer{
+.buttonContainer{
     display: flex;
 }
 
 #title2{
     color: #17BEBB;
 }
-.infoHeader{
-    margin-top: 15em;
-}
+
 
 /*||||||||||||||||| ABOUT CONTAINER |||||||||||||||||*/
 
@@ -124,7 +120,6 @@ body{
 }
 .aboutContainer p{
     font-family: 'Questrial', sans-serif;
-    font-size: 18px;
     font-weight: 400;
     color: #fff;
 }
@@ -132,24 +127,13 @@ body{
     padding: 2% 20% 0 20%;
     margin-bottom: 5%;
 }
-.infoContainer{
-    width: 25em;
-}
-.aboutInfoContainer{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 15% 0 15%;
-}
-.aboutInfoContainer p{
-    font-size: 16px;
-}
+
+
 .aboutCircle{
     background-color: #212121;
     width: 3.87em;
-    height: 3.87em;
     border-radius: 50%;
     padding: 25px;
-    margin-left: 40%;
     margin-bottom: 5%;
 }
 .aboutInnerCircle{
@@ -157,6 +141,16 @@ body{
     width: 0.75em;
     height: 0.75em;
     border-radius: 50%;
+}
+.infoContainer{
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   max-width: 100%;
+   }
+   .circleContainer{
+    padding-left: 40%;
 }
 
 /*|||||||||||||||||||| WHAT I DO |||||||||||||||||||||||*/
@@ -174,6 +168,7 @@ body{
     height: 15em;
     margin: 1%;
     padding: 3%;
+    max-width: 100%;
 }
 
 .whatInfo p{
@@ -187,6 +182,8 @@ body{
     border-top: #17BEBB 3px solid;
     width: 25px;
 }
+
+/*================ SKILLS ==================*/
 
 .skillsContainer{
     margin: 7% 0 7% 0;
@@ -206,13 +203,11 @@ body{
 }
 .skills h2{
     font-family: 'DM Sans', sans-serif;
-    font-size: 4.5em;
     font-weight: 700;
     color: #C4C4C4;
 }
 .skills h6{
     font-family: 'Questrial', sans-serif;
-    font-size: 1.5em;
     font-weight: 400;
     color: #17BEBB;
 }
@@ -224,20 +219,17 @@ body{
 }
 .projectsInfo{
     display: flex;
-    justify-content: space-around;
     margin-bottom: 5%;
 }
 
 .projectsInfo h2{
     color: #17BEBB;
     font-family: 'Poppins', sans-serif;
-    font-size: 4em;
     font-weight: 700;
 }
 .projectsInfo h4{
     color: #C4C4C4;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.25em;
     font-weight: 700;
 }
 .projectsInfo p{
@@ -260,6 +252,10 @@ body{
 }
 .webButton{
     margin-left: 0;
+}
+.projectsImage img{
+    width: auto;
+    max-width: 100%;
 }
 
 .formContainer{
@@ -307,7 +303,7 @@ label{
     color: #171717;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 1.2em;
     font-family: 'Questrial', sans-serif;
     font-weight: 800;
@@ -318,15 +314,153 @@ label{
   }
 
   @media only screen and (min-width: 300px) {
-    .form{
-        display: block;
+     form{
+         display: flex;
+        flex-direction: column;
         justify-content: center;
+     }   
+    .title{
+        font-size: 2em;
+    }
+    .subTitle{
+        font-size: 1.5em ;
+    }
+    .profilePicture img{
+        width: 15em;
+    }
+    
+    .profileHeader p{
+        font-size: 1em;
+        text-align: center;
+    }
+    .profileHeader .title{
+        text-align: center;
+    }
+    .infoHeader{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    .aboutContainer p{
+        font-size: 0.75em;
+    }
+    
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    #navButton{
+        margin-left: 0;
+    }
+    .profileHeader{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    } 
+    .buttonContainer{
+        justify-content: center;
+        margin-left: 0;
+    }
+   .profilePicture{
+       text-align: center;
+   }
+   .aboutInfoContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
+    }
+    .whatContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skillsInfo{
+        flex-direction: column;
+    }
+    section{
+        margin-bottom: 15%;
+        margin-top: 15%;
+    }
+    .projectsContainer .title{
+        margin-bottom: 15%;
+    }
+    .projectsInfo{
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .projectsInfo h2{
+        margin-top: 2%;
+        font-size: 2em;
+    }
+    .projectsInfo h4{
+        font-size: 1em;
+    }
+    .projectsInfo p{
+        font-size: 0.75em;
+    }
+    .skills h2{
+        font-size: 3em;
+    }
+    .skills h6{
+        font-size: 1em;
     }
   }
 
-  @media only screen and (min-width: 719px) {
+  @media only screen and (min-width: 992px) {
+    .projectsInfo{
+        justify-content: space-between;
+    }
+    .projectsInfo h2{
+        font-size: 4em;
+    }
+    .projectsInfo h4{
+        font-size: 2.25em;
+    }
+    .skills h2{
+        font-size: 4.5em;
+    }
+    .skills h6{
+        font-size: 1.5em;
+    }
+
+  }
+  @media only screen and (min-width: 1200px) {
     .form{
         display: flex;
         justify-content: center;
     }
+    .title{
+        font-size: 3.5em;
+    }
+    .profilePicture img{
+        width: 37.25em;
+    }
+    .profileHeader{
+        display: flex;
+        justify-content: space-around;
+    }
+    .profileHeader p{
+        font-size: 1.25em;
+        text-align: start;
+    }
+    .profileHeader .title{
+        text-align: start;
+    }
+    .infoHeader{
+        margin-top: 15em;
+    }
+    .aboutContainer p{
+        font-size: 18px;
+    }
+    .aboutInfoContainer p{
+        font-size: 1em;
+    }
+    .aboutInfoContainer{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 15% 0 15%;
+    }
+    .projectsInfo{
+        justify-content: space-around;
+    }
+  
 }
