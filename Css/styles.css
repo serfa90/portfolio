@@ -10,14 +10,18 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     color: #fff;
-    margin-bottom: 5%;
+    margin-bottom: 0.5em;
 }
 .subTitle{
     font-family: 'Questrial', sans-serif;
     font-size: 3em;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 3%;
+    margin-bottom: 1em;
+}
+section{
+    margin-bottom: 8em;
+    margin-top: 8em;
 }
 
 /*||||||||||||||||||| NAVBAR ||||||||||||||||||||*/
@@ -25,6 +29,7 @@ body{
     background-color: #171717;
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .nav-link:hover{
@@ -54,12 +59,11 @@ body{
     height: 2.8em;
     width: 7.8em;
     font-family: 'Questrial', sans-serif;
-    margin-left: 1em;
     font-size: 18px;
    text-align: center;
    color: #171717;
-   align-items: center;
    padding-top: 0.7em;
+   margin-left: 0;
 }
 
 #loader {
@@ -76,11 +80,12 @@ body{
 /*||||||||||||||||| HEADER ||||||||||||||||||||||*/
 
 .profileHeader{
-    margin-top: 3em;
+    display: flex;
 }
 .profilePicture img{
    
     border-radius: 50%;
+    border: 1px solid #282828;
 }
 .profileHeader p{
     font-family: 'Questrial', sans-serif;
@@ -107,6 +112,7 @@ body{
     display: flex;
 }
 
+
 #title2{
     color: #17BEBB;
 }
@@ -124,7 +130,7 @@ body{
     color: #fff;
 }
 .aboutParagraf{
-    padding: 2% 20% 0 20%;
+    padding: 2% 10% 0 10%;
     margin-bottom: 5%;
 }
 
@@ -146,11 +152,13 @@ body{
     width: 35em;
     display: flex;
     flex-direction: column;
-   text-align: center;
-   max-width: 100%;
+    text-align: center;
+    max-width: 100%;
    }
    .circleContainer{
-    padding-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*|||||||||||||||||||| WHAT I DO |||||||||||||||||||||||*/
@@ -158,22 +166,23 @@ body{
 .whatContainer{
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 3em;
 }
 
 .whatInfo{
+    display: flex;
+    flex-direction: column;
     background-color: #282828;
     border-radius: 10px;
     width: 21.8em;
     height: 15em;
     margin: 1%;
-    padding: 3%;
+    padding: 1em;
     max-width: 100%;
 }
 
 .whatInfo p{
     font-family: 'Questrial', sans-serif;
-    font-size: 2.2em;
     font-weight: 400;
     color:#C4C4C4;
     margin-top: 5%;
@@ -185,21 +194,16 @@ body{
 
 /*================ SKILLS ==================*/
 
-.skillsContainer{
-    margin: 7% 0 7% 0;
-}
-
 .skillsInfo{
-    display: flex;
-    justify-content: center;
+    display: grid;
     background-color: #282828;
-    padding: 2%;
-    width: 80%;
+    padding: 1em;
     border-radius: 10px;
+    width: 50%;
 }
 
 .skills{
-    margin: 3% 5% 3% 5%;
+    margin: 1.5em 2em 1.5em 2em;
 }
 .skills h2{
     font-family: 'DM Sans', sans-serif;
@@ -254,7 +258,7 @@ body{
     margin-left: 0;
 }
 .projectsImage img{
-    width: auto;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -270,6 +274,8 @@ body{
 label{
     color: #C4C4C4;
 }
+
+/*||||||||||||||||||||||| FORM ||||||||||||||||||||||||||*/
 .form-control{
     background-color:  #171717!important;
     color: #C4C4C4;
@@ -287,6 +293,20 @@ label{
   #formButton{
       margin-top: 2em;
   }
+  #formButton button{
+    border: none;
+    border-radius: 10px;
+    background-color: #17BEBB;
+    height: 2.8em;
+    width: 7.8em;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+   text-align: center;
+   color: #171717;
+   align-items: center;
+  }
+
 
   /*||||||||||||||||||  GO TO TOP BUTTON ||||||||||||||||||*/
 
@@ -313,6 +333,18 @@ label{
       background-color: #857E7B;
   }
 
+  /*||||||||||||||||||| FOOTER |||||||||||||||||*/
+
+  footer{
+      height: 4em;
+  }
+  footer h6{
+      font-family: 'Poppins', sans-serif;
+      color: #C4C4C4;
+      font-size: 1.2em;
+      font-weight: 600;
+  }
+
   @media only screen and (min-width: 300px) {
      form{
          display: flex;
@@ -328,7 +360,14 @@ label{
     .profilePicture img{
         width: 15em;
     }
-    
+    .buttonContainer{
+        justify-content: center;
+        margin-left: 0;
+    }
+    .profileHeader{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
     .profileHeader p{
         font-size: 1em;
         text-align: center;
@@ -337,13 +376,125 @@ label{
         text-align: center;
     }
     .infoHeader{
-        margin-top: 1em;
-        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .profilePicture{
+        text-align: center;
+        margin-bottom: 1em;
     }
     .aboutContainer p{
         font-size: 0.75em;
     }
+    /*||||||||||||||| SKILLS ||||||||||||||||*/
     
+    .skillsContainer{
+        padding: 0 5em 0 5em;
+    }
+
+    .skillsInfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .skills h2{
+        font-size: 2.5em;
+    }
+    .skills h6{
+        font-size: 1em;
+    }
+
+    /*|||||||||||||| WHAT I DO ||||||||||||||*/
+    .whatContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whatInfo{
+        text-align: center;
+        width: 17em;
+        height: 14em;
+        margin-bottom: 1em;
+    }
+    
+    .whatInfo p{
+        font-size: 1.9em;
+    }
+
+    .projectsInfo{
+        flex-direction: column;
+        margin-bottom: 10%;
+        justify-content: center;
+        align-items: center;
+    }    
+  }
+
+  @media only screen and (min-width: 480px) {
+    .whatInfo{
+        width: 21.8em;
+        height: 15em;
+    }
+    .skillsInfo{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skills h2{
+        font-size: 3.2em;
+    }
+    .skills h6{
+        font-size: 1em;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .profileHeader{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3em;
+    }
+    .profileHeader .title{
+        text-align: start;
+    }
+    .buttonContainer{
+        justify-content: start;
+        margin-left: 0;
+    }
+    .profileHeader p{
+        font-size: 1em;
+        text-align: start;
+    }
+    .infoHeader{
+        padding-top: 4em;
+    }
+    .profilePicture{
+        margin-bottom: 0;
+    }
+    .profilePicture img{
+        width: 18em;
+    }
+
+    .skillsContainer{
+        padding: 0;
+    }
+    .skillsInfo{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+        
+    .whatInfo p{
+        font-size: 2.2em;
+    }
+
+    .aboutInfoContainer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0 8em 0 8em;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+
   }
 
   @media only screen and (max-width: 991px) {
@@ -351,44 +502,11 @@ label{
     #navButton{
         margin-left: 0;
     }
-    .profileHeader{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    } 
-    .buttonContainer{
-        justify-content: center;
-        margin-left: 0;
-    }
-   .profilePicture{
-       text-align: center;
-   }
-   .aboutInfoContainer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
- 
-    }
-    .whatContainer{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .skillsInfo{
-        flex-direction: column;
-    }
-    section{
+      .projectsContainer .title{
         margin-bottom: 15%;
-        margin-top: 15%;
-    }
-    .projectsContainer .title{
-        margin-bottom: 15%;
-    }
-    .projectsInfo{
-        flex-direction: column;
-        margin-bottom: 10%;
     }
     .projectsInfo h2{
-        margin-top: 2%;
+     
         font-size: 2em;
     }
     .projectsInfo h4{
@@ -397,56 +515,33 @@ label{
     .projectsInfo p{
         font-size: 0.75em;
     }
-    .skills h2{
-        font-size: 3em;
+    .projectsImage{
+        margin-bottom: 1em;
     }
-    .skills h6{
-        font-size: 1em;
-    }
+   
   }
 
   @media only screen and (min-width: 992px) {
-    .projectsInfo{
-        justify-content: space-between;
-    }
-    .projectsInfo h2{
-        font-size: 4em;
-    }
-    .projectsInfo h4{
-        font-size: 2.25em;
-    }
-    .skills h2{
-        font-size: 4.5em;
-    }
-    .skills h6{
-        font-size: 1.5em;
-    }
 
-  }
-  @media only screen and (min-width: 1200px) {
-    .form{
-        display: flex;
-        justify-content: center;
-    }
-    .title{
-        font-size: 3.5em;
-    }
-    .profilePicture img{
-        width: 37.25em;
+    #navButton{
+        margin-left: 1em;
     }
     .profileHeader{
-        display: flex;
-        justify-content: space-around;
+        padding: 0 10% 0 10%;
     }
-    .profileHeader p{
-        font-size: 1.25em;
-        text-align: start;
-    }
-    .profileHeader .title{
-        text-align: start;
+    .profilePicture img{
+        width: 23em;
     }
     .infoHeader{
-        margin-top: 15em;
+        padding-top: 8em;
+    }
+    .whatContainer{
+        flex-direction: row;
+    }
+    .whatInfo{
+        text-align: start;
+        width: 18em;
+        height: 14em;
     }
     .aboutContainer p{
         font-size: 18px;
@@ -454,13 +549,56 @@ label{
     .aboutInfoContainer p{
         font-size: 1em;
     }
-    .aboutInfoContainer{
-        display: flex;
-        justify-content: space-around;
-        padding: 0 15% 0 15%;
+
+    .skillsInfo{
+        flex-direction: row;
+    }
+    .skillsInfo{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .projectsInfo{
         justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 10%;
+    }    
+  }
+
+  @media only screen and (min-width: 1200px) {
+    
+    .title{
+        font-size: 3.5em;
     }
-  
+    .profileHeader{
+        padding: 0;
+        margin-top: 3em;
+    }
+    .profilePicture img{
+        width: 37.25em;
+    }
+    .profileHeader p{
+        font-size: 1.25em;
+    }
+    .infoHeader{
+        padding-top: 15em;
+    }
+      
+    .projectsInfo{
+        justify-content: space-around;
+    }
+    .whatInfo{
+        width: 21.8em;
+        height: 15em;
+    }
+    .skills h2{
+        font-size: 4.5em;
+    }
+    .skills h6{
+        font-size: 2.2em;
+    }
+    .projectsInfo h2{
+        font-size: 4em;
+    }
+    .projectsInfo h4{
+        font-size: 2.25em;
+    }
 }

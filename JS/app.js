@@ -1,15 +1,31 @@
 /*||||||||||||||||||| LOADER SET UP |||||||||||||||||||| */
 
 window.onload = function() {
-    var contenedor = document.getElementById('loader');
+    var container = document.getElementById('loader');
    setTimeout(function(){
-    contenedor.style.visibility = 'hidden';
-    contenedor.style.opacity = '0';
-   },2000);
+    container.style.visibility = 'hidden';
+    container.style.opacity = '0';
+   },1500);
 }
 
+/*||||||||||||||||| MY INFO ||||||||||||||||||||*/
+const serfa = {
+    fullName: "Samuel Serfaty",
+    emailAddress: "serfaty.samuel90@gmail.com",
+    phoneNumber: "+5491131787512",
+    profession: "Front-end Developer"
+}
 
-/*|||||||||||||| WHAT I DO HOVER ON LINE ||||||||||||||||||*/
+/*|||||||||||||||||||| HEADER INFO ||||||||||||||||||||||*/
+var headerName = document.getElementById("title2").innerHTML = serfa.fullName;
+var proffesion = document.getElementById("profession").innerHTML = serfa.profession;
+
+/*|||||||||||||||||| ABOUT ME ||||||||||||||||||||*/
+var fullName = document.getElementById("fullName").innerHTML = serfa.fullName;
+var email = document.getElementById("email").innerHTML = serfa.emailAddress;
+var phone = document.getElementById("phone").innerHTML = serfa.phoneNumber;
+
+/*|||||||||||||| WHAT I DO HOVER ||||||||||||||||||*/
 
 $("#iDo1").mouseenter(function(){
     $("#lineColor1").animate({width: '100%'})
