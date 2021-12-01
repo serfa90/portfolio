@@ -20,8 +20,8 @@ body{
     margin-bottom: 1em;
 }
 section{
-    margin-bottom: 8em;
-    margin-top: 8em;
+    margin-bottom: 4em;
+    margin-top: 4em;
 }
 
 /*||||||||||||||||||| NAVBAR ||||||||||||||||||||*/
@@ -122,7 +122,7 @@ section{
 
 .aboutContainer{
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .aboutContainer p{
     font-family: 'Questrial', sans-serif;
@@ -166,7 +166,7 @@ section{
 .whatContainer{
     display: flex;
     justify-content: center;
-    margin-bottom: 3em;
+    margin-bottom: 5%;
 }
 
 .whatInfo{
@@ -221,6 +221,9 @@ section{
     margin-top: 7%;
     margin-bottom: 5%;
 }
+.projectsContainer .title{
+    margin-bottom: 5%;
+}
 .projectsInfo{
     display: flex;
     margin-bottom: 5%;
@@ -261,9 +264,16 @@ section{
     width: 100%;
     max-width: 100%;
 }
+.projectsText{
+    display: flex;
+    flex-direction: column;
+}
 
 .formContainer{
-    margin-bottom: 5em;
+    margin-bottom: 5%;
+}
+.formContainer .title{
+    margin-bottom: 5%;
 }
 
 .form-floating{
@@ -390,6 +400,10 @@ label{
     
     .skillsContainer{
         padding: 0 5em 0 5em;
+        margin-bottom: 5%;
+    }
+    .skillsContainer .title{
+        margin-bottom: 5%;
     }
 
     .skillsInfo{
@@ -428,6 +442,11 @@ label{
         justify-content: center;
         align-items: center;
     }    
+    .projectsText{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }    
   }
 
   @media only screen and (min-width: 480px) {
@@ -464,7 +483,7 @@ label{
         text-align: start;
     }
     .infoHeader{
-        padding-top: 4em;
+        padding-top: 2em;
     }
     .profilePicture{
         margin-bottom: 0;
@@ -533,7 +552,7 @@ label{
         width: 23em;
     }
     .infoHeader{
-        padding-top: 8em;
+        padding-top: 5em;
     }
     .whatContainer{
         flex-direction: row;
@@ -560,7 +579,12 @@ label{
         justify-content: space-around;
         flex-direction: row;
         margin-bottom: 10%;
-    }    
+    }  
+    .projectsText{
+        justify-content: start;
+        align-items: flex-start;
+        text-align: start;
+    }      
   }
 
   @media only screen and (min-width: 1200px) {
@@ -579,7 +603,7 @@ label{
         font-size: 1.25em;
     }
     .infoHeader{
-        padding-top: 15em;
+        padding-top: 8em;
     }
       
     .projectsInfo{
