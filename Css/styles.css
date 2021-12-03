@@ -104,7 +104,7 @@ section{
     background-color: #17BEBB;
 }
 #getButton{
-    background-color: #857E7B;
+    background-color: #C4C4C4;
     margin-left: 1em;
 }
 
@@ -324,7 +324,7 @@ label{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 25px;
     z-index: 99;
     width: 2.5em;
     height: 2.5em;
@@ -339,16 +339,13 @@ label{
     font-family: 'Questrial', sans-serif;
     font-weight: 800;
   }
-  #topBtn:hover{
-      color: #C4C4C4;
-      background-color: #857E7B;
-  }
+ 
 
   /*||||||||||||||||||| WHATSAPP |||||||||||||||||*/
   #whatsappBtn{
     position: fixed;
     bottom: 18px;
-    left: 30px;
+    left: 25px;
     z-index: 99;
     cursor: pointer;
   }
@@ -388,6 +385,7 @@ label{
         margin-left: 0;
     }
     .profileHeader{
+        margin-top: 6em;
         flex-direction: column-reverse;
         justify-content: center;
     }
@@ -598,6 +596,10 @@ label{
         align-items: flex-start;
         text-align: start;
     }     
+    #topBtn:hover{
+        color: #C4C4C4;
+        background-color: #857E7B;
+    }
     
   }
 
@@ -608,7 +610,7 @@ label{
     }
     .profileHeader{
         padding: 0;
-        margin-top: 3em;
+        margin-top: 8em;
     }
     .profilePicture img{
         width: 37.25em;
