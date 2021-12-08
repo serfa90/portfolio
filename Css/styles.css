@@ -194,6 +194,7 @@ section{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
 
@@ -243,13 +244,13 @@ section{
 
 .tap__here{
     position: absolute;
-    margin-left: 35%;
-    margin-top: 20%;
+    margin-left: 60%;
+    margin-top: 5%;
     display: none;
     transition-delay: 5s;
 }
 .tap__here img{
-    width: 40%;
+    width: 70%;
 
 }
 
