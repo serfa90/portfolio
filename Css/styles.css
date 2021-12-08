@@ -168,29 +168,91 @@ section{
     justify-content: center;
     margin-bottom: 5%;
 }
+.card{
+    background-color: #171717;
+    width: 21.8em;
+    height: 15em;
+}
+.cardInner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    cursor: pointer;   
+}
+#iDo1.isFlipped{
+    transform: rotateY(180deg);
+}
+#iDo2.isFlipped{
+    transform: rotateY(180deg);
+}
+#iDo3.isFlipped{
+    transform: rotateY(180deg);
+}
+.cardFace{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+}
 
-.whatInfo{
+.frontCard{
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: #282828;
-    border-radius: 10px;
-    width: 21.8em;
-    height: 15em;
-    margin: 1%;
     padding: 1em;
-    max-width: 100%;
 }
-
-.whatInfo p{
+.cardFace p{
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
     color:#C4C4C4;
     margin-top: 5%;
 }
+.backCard{
+    background-image: linear-gradient( to bottom left, #504e4e, #171717 );
+    transform: rotateY(180deg);
+    padding: 1em;
+}
+
+.backCard p{
+    text-decoration: underline;
+    text-align: center;
+}
+.backCard ul{
+    list-style: none;
+    color: #C4C4C4;
+    text-align: center;
+    padding-left: 0;
+   
+}
+.backCard li{
+    border: 2px solid #17BEBB;
+    border-radius: 5px;
+    width: 6.3em;
+    justify-content: center;
+    display: inline-flex;
+    margin: 2% 2% 0 0;
+}
+
 .lineColor{
     border-top: #17BEBB 3px solid;
     width: 25px;
 }
+
+.tap__here{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 20%;
+    display: none;
+    transition-delay: 5s;
+}
+.tap__here img{
+    width: 40%;
+
+}
+
 
 /*================ SKILLS ==================*/
 
@@ -365,6 +427,8 @@ label{
       font-weight: 600;
   }
 
+
+  /*||||||||||||||||||| MEDIA QUERIES |||||||||||||||||||*/
   @media only screen and (min-width: 300px) {
      form{
          display: flex;
@@ -431,19 +495,23 @@ label{
     }
 
     /*|||||||||||||| WHAT I DO ||||||||||||||*/
+    
     .whatContainer{
         flex-direction: column;
         align-items: center;
     }
 
-    .whatInfo{
-        text-align: center;
+    .card{
         width: 17em;
         height: 14em;
         margin-bottom: 1em;
     }
+
+    .cardInner{
+        text-align: center;
+    }
     
-    .whatInfo p{
+    .cardInner p{
         font-size: 1.9em;
     }
 
@@ -461,7 +529,7 @@ label{
   }
 
   @media only screen and (min-width: 480px) {
-    .whatInfo{
+    .card{
         width: 21.8em;
         height: 15em;
     }
@@ -510,7 +578,7 @@ label{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
         
-    .whatInfo p{
+    .cardInner p{
         font-size: 2.2em;
     }
 
@@ -568,10 +636,14 @@ label{
     .whatContainer{
         flex-direction: row;
     }
-    .whatInfo{
-        text-align: start;
-        width: 18em;
+    .card{
+        margin: 2%;
+        width: 17em;
         height: 14em;
+
+    }
+    .cardInner{
+        text-align: start;
     }
     .aboutContainer p{
         font-size: 18px;
@@ -600,7 +672,14 @@ label{
         color: #C4C4C4;
         background-color: #857E7B;
     }
-    
+    .card{
+
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    #card1{
+        margin-left: 0;
+    }
   }
 
   @media only screen and (min-width: 1200px) {
@@ -610,7 +689,6 @@ label{
     }
     .profileHeader{
         padding: 0;
-        margin-top: 8em;
     }
     .profilePicture img{
         width: 37.25em;
@@ -625,7 +703,7 @@ label{
     .projectsInfo{
         justify-content: space-around;
     }
-    .whatInfo{
+    .cardInner{
         width: 21.8em;
         height: 15em;
     }

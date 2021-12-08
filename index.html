@@ -22,7 +22,7 @@
 
        <!--================ NAVBAR ==================-->
 
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
               <a class="navbar-brand" href="./index.html">SerfaCodes</a>
               <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
      <!--======================== PRESENTATION ===========================-->
 
      <section>
-       <div class="container profileHeader">
+       <div class="container profileHeader" id="headerInfo">
          <div class="infoHeader col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
          <div>
            <h2 class="title">Hi, I am</h2>
@@ -122,25 +122,89 @@
        <div  class="text-center">
          <h2 class="title">What I do</h2>
        </div>
+       
        <div class="container whatContainer">
-  
-          <div class="whatInfo col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4" id="iDo1">
-           <div><img src="./images/software.svg" alt=""></div>
-           <div><p>Software</br> Development</p></div>
-           <div class="lineColor" id="lineColor1"></div>
-          </div>
-          <div class="whatInfo col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4" id="iDo2">
-           <div><img src="./images/webDev.svg" alt=""></div>
-           <div><p>Web</br> Development</p></div>
-           <div class="lineColor" id="lineColor2"></div>
-         </div>
-         <div class="whatInfo col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4" id="iDo3">
-           <div><img src="./images/webDesign.svg" alt=""></div>
-           <div><p>Web</br> Design</p></div>
-           <div class="lineColor" id="lineColor3"></div>
-         </div>
 
+        <div class="card col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4" id="card1">
+          <div class="cardInner" id="iDo1">
+          
+           <div class="cardFace frontCard">
+              <div><img src="./images/webDesign.svg" alt=""></div>
+              <div><p>Software</br> Development</p></div>
+              <div class="lineColor" id="lineColor1"></div>
+              <div class="tap__here" id="tapHere1"><img src="./images/taphere.gif" alt="TAP HERE"></div>
+           </div>
+   
+          <div class="cardFace backCard">
+            <div class="backContent">
+              <p>Tools</p>
+                 <ul>
+                   <li>HTML</li>
+                   <li>CSS</li>
+                   <li>SASS</li>
+                   <li>BALSAMIQ</li>
+                   <li>BOOTSTRAP</li>
+                   <li>MATERIAL-UI</li>
+                 </ul>
+            </div>
+          </div>
+          </div>
        </div>
+          
+      <div class="card col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4">
+        <div class="cardInner" id="iDo2">
+        
+         <div class="cardFace frontCard">
+          <div><img src="./images/webDesign.svg" alt=""></div>
+          <div><p>Web</br> Development</p></div>
+          <div class="lineColor" id="lineColor2"></div>
+          <div class="tap__here" id="tapHere2"><img src="./images/taphere.gif" alt="TAP HERE"></div>
+         </div>
+ 
+        <div class="cardFace backCard">
+          <div class="backContent">
+            <p>Tools</p>
+               <ul>
+                 <li>HTML</li>
+                 <li>CSS</li>
+                 <li>SASS</li>
+                 <li>BALSAMIQ</li>
+                 <li>BOOTSTRAP</li>
+                 <li>MATERIAL-UI</li>
+               </ul>
+          </div>
+        </div>
+        </div>
+     </div>
+         
+
+      <div class="card col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl4 col-xxl-4">
+       <div class="cardInner" id="iDo3">
+       
+        <div class="cardFace frontCard">
+         <div><img src="./images/webDesign.svg" alt=""></div>
+         <div><p>Web</br> Design</p></div>
+         <div class="lineColor" id="lineColor3"></div>
+         <div class="tap__here" id="tapHere3"><img src="./images/taphere.gif" alt="TAP HERE"></div>
+        </div>
+
+       <div class="cardFace backCard">
+         <div class="backContent">
+           <p>Tools</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>BALSAMIQ</li>
+                <li>BOOTSTRAP</li>
+                <li>MATERIAL-UI</li>
+              </ul>
+         </div>
+       </div>
+       </div>
+    </div>
+       
+  </div> 
      </section>
     
      <!--========================= PROJECTS ==========================-->
@@ -253,7 +317,8 @@
 
      <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
 
-     <a id="whatsappBtn" target="blank_" href="https://wa.me/5491131787512"><img src="./images/WhatsApp.png" alt=""></a>
+     <!--================= WHATSAPP BUTTON ======================-->
+     <a id="whatsappBtn" target="blank_" href="https://wa.me/5491131787512"><img id="wspImg" src="./images/WhatsApp.png" alt="whatsapp"></a>
 
      <!--======================= FOOTER =====================-->
 
