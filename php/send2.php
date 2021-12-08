@@ -21,5 +21,5 @@ $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+header("Location: https://pensive-bose-8f73e4.netlify.app/");
 ?>
