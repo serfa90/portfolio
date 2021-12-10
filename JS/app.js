@@ -5,7 +5,7 @@ window.onload = function() {
    setTimeout(function(){
     container.style.visibility = 'hidden';
     container.style.opacity = '0';
-   },1500);
+   },1000);
 }
 
 /*||||||||||||||||| MY INFO ||||||||||||||||||||*/
