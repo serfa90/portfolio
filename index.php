@@ -81,9 +81,9 @@
         </div>
         <div class="aboutInfoContainer">
          <div class="infoContainer">
-          <div class="circleContainer">
+          <div class="circleContainer" id="aboutCircle">
             <div class="aboutCircle">
-              <div class="aboutInnerCircle "></div>
+              <div class="aboutInnerCircle" id="innerCircle"></div>
             </div>
           </div>
            <div>
@@ -91,10 +91,10 @@
             <p id="fullName"></p>
          </div>
          </div>
-         <div class="infoContainer">
+         <div class="infoContainer" id="aboutCircle">
           <div class="circleContainer">
             <div class="aboutCircle">
-              <div class="aboutInnerCircle "></div>
+              <div class="aboutInnerCircle" id="innerCircle"></div>
             </div>
           </div>
           <div>
@@ -103,9 +103,9 @@
         </div>
         </div>
         <div class="infoContainer">
-          <div class="circleContainer">
+          <div class="circleContainer" id="aboutCircle">
           <div class="aboutCircle">
-            <div class="aboutInnerCircle "></div>
+            <div class="aboutInnerCircle" id="innerCircle"></div>
           </div>
         </div>
           <div>
@@ -139,12 +139,10 @@
             <div class="backContent">
               <p>Tools</p>
                  <ul>
-                   <li>HTML</li>
-                   <li>CSS</li>
-                   <li>SASS</li>
-                   <li>BALSAMIQ</li>
-                   <li>BOOTSTRAP</li>
-                   <li>MATERIAL-UI</li>
+                   <li>JAVASCRIPT</li>
+                   <li>JQUERY</li>
+                   <li>GITHUB</li>
+                   <li>BITBUCKET</li>
                  </ul>
             </div>
           </div>
@@ -168,7 +166,6 @@
                  <li>HTML</li>
                  <li>CSS</li>
                  <li>SASS</li>
-                 <li>BALSAMIQ</li>
                  <li>BOOTSTRAP</li>
                  <li>MATERIAL-UI</li>
                </ul>
@@ -192,12 +189,9 @@
          <div class="backContent">
            <p>Tools</p>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
+                <li>PHOTOSHOP</li>
+                <li>FIGMA</li>
                 <li>BALSAMIQ</li>
-                <li>BOOTSTRAP</li>
-                <li>MATERIAL-UI</li>
               </ul>
          </div>
        </div>

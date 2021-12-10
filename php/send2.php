@@ -16,10 +16,10 @@ $mensaje .= "Su celular es: " . $phone . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['message'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'serfaty.samuel90@gmail.com';
-$asunto = 'Mensaje de mi sitio web';
+$for = 'serfaty.samuel90@gmail.com';
+$subject = 'Mensaje de mi sitio web';
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+mail($for, $subject, utf8_decode($mensaje), $header);
 
 header("Location: https://pensive-bose-8f73e4.netlify.app/");
 ?>
