@@ -324,9 +324,9 @@ section{
     margin-left: 0;
 }
 .projectsImage img{
-    width: 100%;
+    width: auto;
     max-width: 600px;
-    height: 320px;
+    height: auto;
     border-radius: 15px;
 }
 .projectsText{
