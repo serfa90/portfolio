@@ -60,7 +60,6 @@ card1.addEventListener('click', function(){
     card1.classList.toggle('isFlipped');
 })
 
-
 const card2 = document.querySelector('#iDo2');
 
 card2.addEventListener('click', function(){

@@ -184,6 +184,7 @@ section{
 #iDo1.isFlipped{
     transform: rotateY(180deg);
 }
+
 #iDo2.isFlipped{
     transform: rotateY(180deg);
 }
@@ -325,7 +326,7 @@ section{
 }
 .projectsImage img{
     width: auto;
-    max-width: 600px;
+    max-width: 95%;
     height: auto;
     border-radius: 15px;
 }
