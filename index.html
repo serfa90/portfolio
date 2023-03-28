@@ -135,9 +135,9 @@
         </div>
         <div class="aboutInfoContainer">
          <div class="infoContainer">
-          <div class="circleContainer" id="aboutCircle">
+          <div class="circleContainer">
             <div class="aboutCircle">
-              <div class="aboutInnerCircle" id="innerCircle"></div>
+              <div class="aboutInnerCircle"></div>
             </div>
           </div>
            <div>
@@ -145,10 +145,10 @@
             <p id="fullName"></p>
          </div>
          </div>
-         <div class="infoContainer" id="aboutCircle">
+         <div class="infoContainer">
           <div class="circleContainer">
             <div class="aboutCircle">
-              <div class="aboutInnerCircle" id="innerCircle"></div>
+              <div class="aboutInnerCircle"></div>
             </div>
           </div>
           <div>
@@ -157,9 +157,9 @@
         </div>
         </div>
         <div class="infoContainer">
-          <div class="circleContainer" id="aboutCircle">
+          <div class="circleContainer">
           <div class="aboutCircle">
-            <div class="aboutInnerCircle" id="innerCircle"></div>
+            <div class="aboutInnerCircle"></div>
           </div>
         </div>
           <div>
@@ -168,6 +168,7 @@
         </div>
         </div>
       </div>
+    </div>
      </section>
 
      <!--=========================== WHAT I DO ===============================-->
@@ -184,7 +185,7 @@
           
            <div class="cardFace frontCard">
               <div><img src="./images/software.svg" alt=""></div>
-              <div><p>Software</br> Development</p></div>
+              <div><p>Software<br>Development</p></div>
               <div class="lineColor" id="lineColor1"></div>
               <div class="tap__here" id="tapHere1"><img src="./images/taphere.gif" alt="TAP HERE"></div>
            </div>
@@ -195,8 +196,10 @@
                  <ul>
                    <li>JAVASCRIPT</li>
                    <li>JQUERY</li>
+                   <li>LIQUID</li>
+                   <li>FIREBASE</li>
+                   <li>CHAT GPT</li>
                    <li>GITHUB</li>
-                   <li>BITBUCKET</li>
                  </ul>
             </div>
           </div>
@@ -208,21 +211,23 @@
         
          <div class="cardFace frontCard">
           <div><img src="./images/webDev.svg" alt=""></div>
-          <div><p>Web</br> Development</p></div>
+          <div><p>Web<br>Development</p></div>
           <div class="lineColor" id="lineColor2"></div>
           <div class="tap__here" id="tapHere2"><img src="./images/taphere.gif" alt="TAP HERE"></div>
          </div>
  
         <div class="cardFace backCard">
           <div class="backContent">
-            <p>Tools</p>
+            <p id="web_tools">Tools</p>
                <ul>
                  <li>HTML</li>
-                 <li>CSS</li>
+                 <li>TAILWIND</li>
                  <li>SASS</li>
                  <li>BOOTSTRAP</li>
                  <li>WIX</li>
                  <li>WORDPRESS</li>
+                 <li>SHOPIFY</li>
+                 <li>WEBFLOW</li>
                </ul>
           </div>
         </div>
@@ -235,7 +240,7 @@
        
         <div class="cardFace frontCard">
          <div><img src="./images/webDesign.svg" alt=""></div>
-         <div><p>Web</br> Design</p></div>
+         <div><p>Web<br>Design</p></div>
          <div class="lineColor" id="lineColor3"></div>
          <div class="tap__here" id="tapHere3"><img src="./images/taphere.gif" alt="TAP HERE"></div>
         </div>
@@ -247,6 +252,7 @@
                 <li>PHOTOSHOP</li>
                 <li>FIGMA</li>
                 <li>BALSAMIQ</li>
+                <li>CANVA</li>
               </ul>
          </div>
        </div>
@@ -263,78 +269,86 @@
          <div class="text-center">
            <h2 class="title">Projects</h2>
          </div>
+         <!-- PORSCHE TENNIS -->
          <div class="projectsInfo col-xxl-12 col-xl-12">
-          <div class="projectsImage"><img src="./images/commos.png" alt="Commos"></div>
+          <div class="projectsImage"><img src="./images/porschetennis.png" alt="Porsche Tennis"></div>
+          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
+            <h2>01</h2>
+            <h4>Porsche Tennis</h4>
+            <p>Accreditation system for a tennis tournament sponsored by Porsche.</p>
+            <p><b>Used technologies:</b> Firebase Firestore, Firebase Extensions, Firebase Functions, Webflow, HTML, CSS, Javascript, Sendinblue.</p>
+               <a class="getButton nav-link webButton" target="blank_" href="https://malditohummus.netlify.app/index.html">Visit Website</a>
+          </div>
+        </div>
+        <!-- HAILO US -->
+        <div class="projectsInfo col-xxl-12 col-xl-12">
+          <div class="projectsImage"><img src="./images/hailo_us.png" alt="Hailo US"></div>
+          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
+            <h2>02</h2>
+            <h4>Hailo US</h4>
+            <p>Ecommerce for the EEUU of a German-based company that manufactures premium bins and ladders.</p>
+            <p><b>Used technologies:</b> Shopify, Liquid, HTML, CSS, Javascript.</p>
+               <a class="getButton nav-link webButton" target="blank_" href="https://hailo.us/">Visit Website</a>
+          </div>
+        </div>
+        <!-- BAND OF CODERS -->
+        <div class="projectsInfo col-xxl-12 col-xl-12">
+          <div class="projectsImage"><img src="./images/boc.png" alt="Band Of Coders"></div>
+          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
+            <h2>03</h2>
+            <h4>Band Of Coders</h4>
+            <p>Official site of a US-based software development company.</p>
+            <p><b>Used technologies:</b> WordPress, HTML, CSS, Javascript, Calendly.</p>
+               <a class="getButton nav-link webButton" target="blank_" href="https://everydaykeyessentials.com/">Visit Website</a>
+          </div>
+        </div>
+        <!-- BRAINHOUSE 247 -->
+        <div class="projectsInfo col-xxl-12 col-xl-12">
+          <div class="projectsImage"><img src="./images/brainhouse247.png" alt="Brainhouse 247"></div>
+          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
+            <h2>04</h2>
+            <h4>Brainhouse 247</h4>
+            <p>Official site of a flexible and collaborative coworking space in Germany.</p>
+            <p><b>Used technologies:</b> Webflow, HTML, CSS, Javascript.</p>
+               <a class="getButton nav-link webButton" target="blank_" href="https://www.brainhouse247.com/">Visit Website</a>
+          </div>
+        </div>
+        <!-- COMMOS CONSULTING -->
+        <div class="projectsInfo col-xxl-12 col-xl-12">
+          <div class="projectsImage"><img src="./images/commos.png" alt="Commos consulting"></div>
            <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-             <h2>01</h2>
+             <h2>05</h2>
              <h4>Commos Consulting</h4>
               <p>Boutique coaching and consulting firm with global reach exclusively dedicated to provide
                innovative training solutions for commodities, commodity trading and risk management.</p>
+               <p><b>Used technologies:</b> HTML, CSS, Javascript.</p>
                <a class="getButton nav-link webButton" target="blank_" href="https://commosconsulting.com">Visit Website</a>
            </div>
          </div>
-         <div class="projectsInfo col-xxl-12 col-xl-12">
-          <div class="projectsImage"><img src="./images/kleins-bakery.png" alt="Kleins Bakery"></div>
-          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-            <h2>02</h2>
-            <h4>Klein's Bakery & Café</h4>
-            <p>Ecommerce of a Venezuelan Bakery and Coffee shop located in Chicago, IL.</p>
-               <a class="getButton nav-link webButton" target="blank_" href="https://kleinsbakerycafe.com/">Visit Website</a>
-          </div>
-        </div>
+         <!-- KLEIN'S BAKERY -->
         <div class="projectsInfo col-xxl-12 col-xl-12">
-          <div class="projectsImage"><img src="./images/curda_express.png" alt="Curda Express"></div>
+         <div class="projectsImage"><img src="./images/kleins-bakery.png" alt="Klein's Bakery"></div>
           <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-            <h2>03</h2>
-            <h4>Curda Express</h4>
-            <p>Personal project. Liquor store website with a shopping cart.</p>
-               <a class="getButton nav-link webButton" target="blank_" href="https://serfa90.github.io/curdaexpress/">Visit Website</a>
-          </div>
-        </div>
-        <div class="projectsInfo col-xxl-12 col-xl-12">
-          <div class="projectsImage"><img src="./images/shopEverithing4outdoors.png" alt="shopEverithing4outdoors"></div>
-          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-            <h2>04</h2>
-            <h4>Shop Everything 4 Outdoors</h4>
-            <p>Outdoors blog website created in WordPress with Amazon Affiliate Program and partner stores included.</p>
-               <a class="getButton nav-link webButton" target="blank_" href="https://shopeverything4outdoors.com/">Visit Website</a>
-          </div>
-        </div> 
-      <div class="projectsInfo col-xxl-12 col-xl-12">
-        <div class="projectsImage"><img src="./images/everydaykeyessentials.png" alt="everydaykeyessentials"></div>
-        <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-          <h2>05</h2>
-          <h4>Everyday Key Essentials</h4>
-          <p>Beauty and health blog website created in WordPress with Amazon Affiliate Program included.</p>
-             <a class="getButton nav-link webButton" target="blank_" href="https://everydaykeyessentials.com/">Visit Website</a>
+           <h2>06</h2>
+           <h4>Klein's Bakery & Café</h4>
+           <p>Ecommerce of a Venezuelan Bakery and Coffee shop located in Chicago, IL.</p>
+           <p><b>Used technologies:</b> Shopify, HTML, CSS, Javascript.</p>
+             <a class="getButton nav-link webButton" target="blank_" href="https://kleinsbakerycafe.com/">Visit Website</a>
         </div>
       </div>
+      <!-- DRA ANA-->
         <div class="projectsInfo col-xxl-12 col-xl-12">
           <div class="projectsImage">
             <img src="./images/draana.png" alt="Dra Ana">
-            <div class="usedTech">
-              <div>
-                <img src="" alt="">
-              </div>
-            </div>
           </div>
-          <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
-            <h2>06</h2>
-            <h4>Gestando Un Nuevo Ser</h4>
-            <p>Website for the gynecologist Dra. Ana Maria Vecchione created in Wix.</p>
-               <a class="getButton nav-link webButton" target="blank_" href="https://www.dra-anavecchione.com/">Visit Website</a>
-          </div>
-        </div> 
-        <div class="projectsInfo col-xxl-12 col-xl-12">
-          <div class="projectsImage"><img src="./images/MH.png" alt="MalditoHummus"></div>
           <div class="projectsText col-xxl-5 col-xl-5 col-lg-5">
             <h2>07</h2>
-            <h4>Maldito Hummus</h4>
-            <p>Maldito Hummus is Buenos Aires best hummus. A product created to be taken out of the dietary stigma.
-               Making flavors mixed to please everyones preferences.</p>
-               <a class="getButton nav-link webButton" target="blank_" href="https://malditohummus.netlify.app/index.html">Visit Website</a>
+            <h4>Gestando Un Nuevo Ser</h4>
+            <p>Website for the gynecologist Dra. Ana Maria Vecchione.</p>
+            <p><b>Used technologies:</b> Wix, Calendly.</p>
+               <a class="getButton nav-link webButton" target="blank_" href="https://www.dra-anavecchione.com/">Visit Website</a>
           </div>
-        </div>            
+        </div>           
     </div>
      </section>
 
@@ -344,21 +358,29 @@
        <h2 class="text-center title">SKILLS</h2>
        <div class="skillsInfo container">
          <div class="skills text-center">
-           <h2>90%</h2>
            <h6>HTML</h6>
         </div>
          <div class="skills text-center">
-           <h2>70%</h2>
            <h6>CSS</h6>
         </div>
+        <div class="skills text-center">
+          <h6>SASS</h6>
+         </div>
          <div class="skills text-center">
-           <h2>60%</h2>
+          <h6>TAILWIND CSS</h6>
+         </div>
+         <div class="skills text-center">
            <h6>JAVASCRIPT</h6>
          </div>
          <div class="skills text-center">
-           <h2>75%</h2>
            <h6>JQUERY</h6>
           </div>
+          <div class="skills text-center">
+            <h6>FIREBASE</h6>
+           </div>
+           <div class="skills text-center">
+            <h6>LIQUID</h6>
+           </div>
        </div>
      </section>
 
@@ -374,27 +396,27 @@
       <form id="contact-form" class="contact" name="contact-form" action="https://formsubmit.co/68d3acfbb9d4ee93d2269382f5843835" method="POST">
       <div class="form">
         <div class="form-floating form-group mb-3 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
-          <input type="text" name="name" class="form-control" id="floatingInput"  placeholder="Your name" required>
+          <input type="text" name="name" class="form-control" placeholder="Your name" required>
           <label for="floatingInput">Name</label>
         </div>
         <div class="form-floating form-group mb-3 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
-          <input type="text" name="lastName" class="form-control" id="floatingInput" placeholder="Last name" required>
+          <input type="text" name="lastName" class="form-control" placeholder="Last name" required>
           <label for="floatingInput">Last name</label>
         </div>
       </div>
       <div class="form">
         <div class="form-floating form-group mb-3 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
-          <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+          <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
           <label for="floatingInput">Email</label>
         </div>
         <div class="form-floating form-group mb-3 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
-          <input type="number" name="phone" class="form-control" id="floatingInput" placeholder="Phone number" required>
+          <input type="number" name="phone" class="form-control" placeholder="Phone number" required>
           <label for="floatingInput">Phone number</label>
         </div>
       </div>
       <div class="form">
         <div class="form-floating form-group mb-3 col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
-          <textarea class="form-control" name="message" type="text" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+          <textarea class="form-control" name="message" type="text" placeholder="Leave a comment here" style="height: 100px" required></textarea>
           <label for="floatingTextarea2">Comments</label>
         </div>
       </div>
@@ -417,7 +439,7 @@
 
      <section class="container-fluid">
      <footer class="text-center">
-       <h6>© SerfaCodes 2021</h6>
+       <h6>© SerfaCodes 2023</h6>
      </footer>
      </section>
 
@@ -426,3 +448,4 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
+</html>
